@@ -1,0 +1,57 @@
+.timeline-grid {
+  position: relative;
+  height: 1440px;
+  border-left: 2px solid #ccc;
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline-column {
+  position: relative;
+  height: 1440px;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.timeline-column .timeline-block {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  background: #2f4f9f;
+  color: white;
+  border: 1px solid #1f356d;
+  padding: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.timeline-column .timeline-block.meal {
+  background: #d4882f;
+}
+
+.now-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: red;
+  z-index: 20;
+}
+
+.gap-block {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #f7f7f7;
+  border: 1px dashed #999;
+  padding: 4px;
+  text-align: left;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+
+
